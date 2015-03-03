@@ -44,13 +44,13 @@ $(document).ready(function() {
 
     $("#equals").click(function() {
         if(operator === "+") {
-            number = (parseInt(number, 10) + parseInt(newnumber,10)).toString();
+            number = (parseInt(newnumber, 10) + parseInt(number,10)).toString();
         } else if (operator === "-") {
-            number = (parseInt(number, 10) - parseInt(newnumber,10)).toString();
+            number = (parseInt(newnumber, 10) - parseInt(number,10)).toString();
         } else if (operator === "/") {
-            number = (parseInt(number, 10) / parseInt(newnumber,10)).toString();
+            number = (parseInt(newnumber, 10) / parseInt(number,10)).toString();
         } else if (operator === "*") {
-            number = (parseInt(number, 10) * parseInt(newnumber,10)).toString();
+            number = (parseInt(newnumber, 10) * parseInt(number,10)).toString();
         }
         totaldiv.text(number);
         testNumLength(number);
